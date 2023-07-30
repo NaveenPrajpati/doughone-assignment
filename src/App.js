@@ -73,9 +73,9 @@ function App() {
                 </div>
                 <div className='flex items-center  gap-5'>
                
-                <div className='flex'>
-                  <input type="range" name="" id="" className='' />
-                  <p className='text-white text-[11px]'>75%</p>
+                <div className='flex items-center'>
+                  <input type="range"  value={0}  className=' appearance-none bg-transparent [&::-webkit-slider-runnable-track]:rounded-full [&::-webkit-slider-runnable-track]:bg-slate-300 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:h-[10px] [&::-webkit-slider-thumb]:w-[80px] [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-white' />
+                  <p className='text-white text-[14px]'>75%</p>
                 </div>
                   
                   <div className='flex gap-1'>
@@ -108,7 +108,59 @@ function App() {
                 </div>
                 ))}
               </div>
-              <div className='flex justify-end h-7 bg-blue-500 p-1'>
+              <div className='flex justify-end h-7 bg-blue-400 p-1'>
+              <IoIosArrowDown className='text-xl text-white'/>
+              </div>
+              <div className='h-20 p-1'>
+
+              </div>
+            </div>
+            <div className=' border border-blue-500 rounded-md mt-5'>
+              <div className='flex justify-between bg-blue-500 p-1'>
+                <div className='flex items-center gap-2'>
+                  <div className='w-5 h-5 rounded-full bg-white'></div>
+                  <p className='bg-white text-blue-400 px-2 rounded-xl text-sm'>Slip Number #123456</p>
+                  <p className='bg-white text-blue-400 px-2 rounded-xl text-sm'>Loading</p>
+                  <p className='bg-white text-blue-400 px-2 rounded-xl text-sm'>Loading</p>
+                </div>
+                <div className='flex items-center  gap-5'>
+               
+                <div className='flex items-center'>
+                  <input type="range"  value={0}  className=' appearance-none bg-transparent [&::-webkit-slider-runnable-track]:rounded-full [&::-webkit-slider-runnable-track]:bg-slate-300 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:h-[10px] [&::-webkit-slider-thumb]:w-[80px] [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-white' />
+                  <p className='text-white text-[14px]'>75%</p>
+                </div>
+                  
+                  <div className='flex gap-1'>
+                  <PiPencilSimpleBold className='text-blue-500 bg-white rounded-sm text-2xl'/>
+                  <PiPauseBold className='text-blue-500 bg-white rounded-sm text-2xl'/>
+                  <PiPlayBold className='text-blue-500 bg-white rounded-sm text-2xl'/>
+                  <PiDownloadSimpleBold className='text-blue-500 bg-white rounded-sm text-2xl'/>
+                  <PiLinkSimpleBreakBold className='text-blue-500 bg-white rounded-sm text-2xl'/>
+                  </div>
+                  <div className='flex'>
+
+                  <PiStarFill className='text-yellow-400   text-3xl'/>
+                  <PiStarFill className='text-yellow-400   text-3xl'/>
+                  <PiStarFill className='text-yellow-400   text-3xl'/>
+                  <PiStarHalfFill className='text-yellow-400   text-3xl'/>
+                  <PiStarBold className='text-yellow-400 text-3xl'/>
+                  </div>
+                  
+                </div>
+              </div>
+              <div className='p-2 flex flex-wrap items-center'>
+                <div className='w-28 h-8 border-2 border-slate-300 m-4  rounded-md'>
+                <p className=' text-[11px] text-slate-500 ml-2 -mt-3 p-1 bg-white w-fit mb-0'>Truck Number</p>
+                <p className=' text-center  text-[11px] -mt-1'>HR29 BD 234</p>
+                </div>
+                {Array.from({length: 10}, (_, index)=>(
+                  <div className='w-28 h-8 border-2 border-slate-300 m-4  rounded-md'>
+                <p className=' text-[11px] text-slate-500 ml-2 -mt-3 p-1 bg-white w-fit mb-0'>Truck Number</p>
+                <p className=' text-center  text-[11px] -mt-1'>HRXX XXXX</p>
+                </div>
+                ))}
+              </div>
+              <div className='flex justify-end h-7 bg-blue-400 p-1'>
               <IoIosArrowDown className='text-xl text-white'/>
               </div>
               <div className='h-20 p-1'>
@@ -133,8 +185,17 @@ function App() {
 
           </div>
           <div  className='w-full bg-neutral-100 p-5'>
-            <div className='h-28 w-full border-2 border-blue-500 rounded-lg bg-white'>
-            <div className='border-2 h-20 w-20 rounded-md mx-auto mt-4 '></div>
+            <div className=' h-32 mt-4 w-full border-2 shadow-lg border-blue-500 rounded-lg bg-white'>
+            <div className='border-2 border-slate-400 h-20 w-20 rounded-md mx-auto mt-5 '>
+              <div className='h-5 w-full border-b-2 border-slate-400'></div>
+              <div className='w-5 h-14 border-r-2 border-slate-400'></div>
+            </div>
+            </div>
+            <div className='h-32 mt-4 w-full border-2 shadow-lg border-blue-500 rounded-lg bg-white'>
+            <div className='border-2 border-slate-400 h-20 w-20 rounded-md mx-auto mt-5 '>
+              <div className='h-5 w-full border-b-2 border-slate-400'></div>
+              <div className='w-5 h-14 border-r-2 border-slate-400'></div>
+            </div>
             </div>
           </div>
           </div>
